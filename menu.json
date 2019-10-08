@@ -1,0 +1,7 @@
+[
+	{"name": "百度","icon": "iconshouye","url": "http://www.baidu.com"},
+	{"name": "新闻管理","icon": "iconsingle","children": [
+		{"name": "国内新闻2","url": "./pages/news/news_list.html"},
+		{"name": "国外新闻","url": "pages/cards/cards_logout_province.html"}
+	]}
+]

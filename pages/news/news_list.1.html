@@ -7,30 +7,26 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
   <!-- Morris chart -->
-  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  <link rel="stylesheet" href="../../bower_components/morris.js/morris.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="../../bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Date Picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" href="dist/js/layui/css/layui.css">
-  <link rel="stylesheet" href="dist/css/base.css">
+  <link rel="stylesheet" href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,10 +37,6 @@
 
   <!-- Google Font -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> -->
-	<style>
-		.content-wrapper{position: relative;}
-		.iframe{display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;border: none;}
-	</style>
 </head>
 <body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
@@ -111,13 +103,14 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">孔乙己</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
                 <p>
                   孔乙己 - 国学教师
                   <small>多乎哉？不多也！</small>
@@ -162,9 +155,9 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      <div class="user-panel mb10">
+      <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>孔乙己</p>
@@ -172,20 +165,36 @@
         </div>
       </div>
       <!-- search form -->
-      <!-- <form action="#" method="get" class="sidebar-form">
+      <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" autocomplete="off" name="q" class="form-control" placeholder="请输入...">
-						<span class="input-group-btn">
-							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-							</button>
-						</span>
+          <input type="text" name="q" class="form-control" placeholder="请输入...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
         </div>
-      </form> -->
+      </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree" id="menuDom">
-        <!-- <li class="header">主导航</li> -->
-       
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">主导航</li>
+        <li>
+          <a href="http://www.baidu.com" target="_blank">
+            <i class="fa fa-th"></i> <span>百度</span>
+          </a>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>新闻管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> 国内新闻</a></li>
+            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> 国际新闻</a></li>
+          </ul>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -193,7 +202,83 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <iframe class="iframe" name="iframe1" src="pages/news/news_list.html"></iframe>
+
+    <!-- Main content -->
+    <section class="content">
+			    <!-- general form elements -->
+			    <div class="box box-primary">
+			      <!-- form start -->
+			      <form role="form">
+			        <div class="box-body">
+								<div class="row">
+								  <!-- left column -->
+								  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+								  	<label for="exampleInputEmail1">手机号</label>
+								  	<input type="email" class="form-control" placeholder="Enter email">
+								  </div>
+								  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+								  	<label for="exampleInputEmail1">姓名</label>
+								  	<input type="email" class="form-control" placeholder="Enter email">
+								  </div>
+								  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+								  	<label for="exampleInputEmail1">性别</label>
+								  	<select class="form-control">
+								  	  <option value="">不限</option>
+								  	  <option value="1">男</option>
+								  	  <option value="0">女</option>
+								  	</select>								  	  
+								  </div>
+								  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+								  	<label for="exampleInputEmail1"></label>
+										<div>
+											<button type="submit" class="btn btn-primary">搜索</button>
+											<button type="submit" class="btn btn-primary">重置</button>
+											<button type="submit" class="btn btn-primary">导出</button>
+										</div>
+								  	
+								  </div>
+								</div>
+							</div>
+						</form>
+						<div class="box-footer">
+							<button type="submit" class="btn btn-danger">删除</button>
+							<button type="submit" class="btn btn-primary">添加</button>
+						</div>
+						
+						<table id="example1" class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th>姓名</th>
+									<th>手机号</th>
+									<th>性别</th>
+									<th width="120px" style="text-align: center;" align="center">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>孔乙己</td>
+									<td>110</td>
+									<td>男</td>
+									<td>
+										<button type="button" class="btn btn-primary btn-xs">查看</button>
+										<button type="button" class="btn btn-primary btn-xs">查看</button>
+									</td>
+								</tr>
+								<tr>
+									<td>鲁迅</td>
+									<td>18000000000</td>
+									<td>男</td>
+								</tr>
+								<tr>
+									<td>吴妈</td>
+									<td>1836666666</td>
+									<td>女</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+    </section>
+    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -217,70 +302,16 @@
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-<script type="text/html" id="navTpl">
-	{{# layui.each(d, function(index, item){ }}
-		{{# if(item.children){ }}
-			<li class="treeview">
-				<a href="#">
-			    <i class="fa fa-edit"></i> <span>{{item.name}}</span>
-			    <span class="pull-right-container">
-			      <i class="fa fa-angle-left pull-right"></i>
-			    </span>
-			  </a>
-			  <ul class="treeview-menu">
-					{{# layui.each(item.children, function(index2, item2){ }}
-						<li>
-							<a href="{{item2.url}}" target="iframe1"><i class="fa fa-circle-o"></i> {{item2.name}}</a>
-						</li>
-			    {{# }) }}
-			  </ul>
-			</li>
-		{{# }else{ }}
-			<li>
-			  <a href="{{item.url}}" target="iframe1">
-			    <i class="fa fa-th"></i> <span>{{item.name}}</span>
-			  </a>
-			</li>
-		{{# } }}
-	{{# }) }}
-			
-			
-</script>
-<!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-<script src="dist/js/layui/layui.js"></script>
+<script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-<script>
-	layui.extend({
-		rocTools: './dist/module/rocTools'
-	})
-	layui.use(['laytpl','rocTools'],function(){
-		initNav();
-	})
-	
-	function initNav(){
-		layui.rocTools.ajax({
-			url:'./menu.json',
-			success:function(r){
-				layui.laytpl(navTpl.innerHTML).render(r,function(html){
-					// console.log(html);
-					$('#menuDom').html(html);
-				})
-			}
-		})
-	}
-	
-</script>
+<script src="../../dist/js/demo.js"></script>
 </body>
 </html>
